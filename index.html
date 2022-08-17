@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Mi primer codigo HTML 2</title>
+      <style>
+      table, th, td {
+            border: 1px solid black;
+          }
+      </style>
+    </head>
+
+    <body>
+          <!-- <table> es una tabla-->
+          <table>
+          <tr>
+          <th>Precio</th>
+          <th>Producto</th>
+          <th>Cantidad</th>
+          </tr>
+          <tr>
+          <td>$100</td>
+          <td>Alfajor</td>
+          <td>6 unid</td>
+          </tr>
+          <tr>
+          <td>$180</td>
+          <td>Helado</td>
+          <td>3 unid</td>
+          </tr>
+          </table>
+          <br />
+          <table style="width: 500px;">
+          <thead>
+          <tr>
+          <th>Precio</th>
+          <th>Producto</th>
+          <th>Cantidad</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>$100</td>
+          <td>Alfajor</td>
+          <td>6 unid</td>
+          </tr>
+          <tr>
+          <td>$180</td>
+          <td>Helado</td>
+          <td>3 unid</td>
+          </tr>
+          <tfoot>
+          <td>$346</td>
+          <td></td>
+          <td>9 unidades</td>
+          </tfoot>
+          </tbody>
+          </table>
+          <!-- <ul> es lista no ordenada-->
+          <ul>
+          <!-- <li> es list Item-->
+          <li>Elemento 1</li>
+          <li>Elemento 2</li>
+          <li>Elemento 3</li>
+          <li>Elemento 4</li>
+          </ul>
+          <!-- <ul> es lista ordenada-->
+          <ol>
+          <!-- <li> es list Item-->
+          <li>Elemento 1</li>
+          <li>Elemento 2</li>
+          <li>Elemento 3</li>
+          <li>Elemento 4</li>
+          </ol>
+          <ol>
+          <!-- <li value="50"> es list Item e indica 
+          desde que numero se va a incrementar la lista-->
+          <li value="50">Elemento 1</li>
+          <li>Elemento 2</li>
+          <li>Elemento 3</li>
+          <li>Elemento 4</li>
+          </ol>
+          <ol>
+          <!-- <li> <ol> es lista anidada de Items que por defecto enumera desde 1.-->
+          <li>Elemento 1</li>
+          <ol>
+          <li>Sublmento 1</li>
+          <li>Sublmento 2</li>
+          <li>Sublmento 3</li>
+          </ol>
+          <li>Elemento 2</li>
+          <ol>
+          <li style="list-style-type: lower-alpha;">Sublmento 1</li>
+          <li style="list-style-type: lower-alpha;">Sublmento 2</li>
+          <li style="list-style-type: lower-alpha;">Sublmento 3</li>
+          </ol>
+          <li>Elemento 3</li>
+          <li>Elemento 4</li>
+          </ol>
+          <form>
+          <label>Nombre</label>
+          <input
+          <!--value="Jose"
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="escriba aqui su nombre"
+          />
+          <br />
+          <br />
+          <!-- si pongo value=Jose n el campo por defecto va aparecer JoseAca este Form hace que si pongo en cursor en la palabra en vez de <
+                  ponerlo enel box igual me posiciona en el box-->
+          <!-- Aca este Form hace que si pongo en cursor en la palabra en vez de <
+                  ponerlo enel box igual me posiciona en el box-->
+          <label for="apellido">Apellido</label>
+          <input
+          type="text"
+          id="apellido"
+          name="apllido"
+          placeholder="escriba aqui su apellido"
+          />
+          <!--type="submit" se transforma en boton de submit-->
+          <!--type="email" el campo solo admite testos con estructura de email-->
+          <!--type="password" oculta en pantalla con **** el texto ingresado-->
+          <!--type="radio" se transforma en un checkbox redondo-->
+          <!--type="checkbox" se transforma en un checkbox cuadrado-->
+          <!--type="file" se transforma en un boton choose fle-->
+          <br />
+          <br />
+          <label for="apellido">Comentario</label>
+          <br />
+          <textarea
+          type="text"
+          rows="10"
+          cols="20"
+          id="comentario"
+          name="comentario"
+          placeholder="Ingrese Comentario"
+          >
+          </textarea>
+          <br />
+          <input type="submit" />
+          <button type="button">Tipo Boton</button>
+          <!-- type="button" requiere que en JS se le asigne una funcion-->
+          <button type="reset">Tipo Reset</button>
+          <!-- type="reset" vuelve todo los valores al estado inicial-->
+          <button type="submit">Tipo Submit</button>
+          <!-- type="submit" envia el formulario a donde Yo le indque-->
+          <button type="button">
+          <img src="bles-logo.png" />Boton Tipo Imagen
+          </button>
+          <!-- type="submit" envia el formulario a donde Yo le indque-->
+          </form>
+          <h1>Mi primer Heading</h1>
+          <h2>Mi segundo Heading</h2>
+          <h3>Mi tercer Heading</h3>
+          <h4>Mi cuarto Heading</h4>
+          <h5>Mi quinto Heading</h5>
+          <h6>El sexto s el ultimo Heading</h6>
+          <p>Parrafo 1</p>
+          <p>Parrafo 1</p>
+          <h2>Titulo 1</h2>
+          <p>
+          Parrafo 1 largo largo largo largo largo largo largo largo largo muyyy
+          largo
+          </p>
+          <p>
+          Parrafo 1 largo largo largo largo largo <br />
+          <!-- <br> es como un enter pasa a la otra linea -->
+          largo largo largo largo muyyy largo
+          </p>
+          <hr />
+          <!-- este <hr> me dibuja una linea -->
+          <p>Parrafo 1</p>
+          <!-- este texto es un comentario -->
+          <a href="https://www.google.com">Ir a Google</a> <br />
+          <br />
+          <a target="_blank" href="https://www.google.com"
+          >Ir a Google en otra ventana</a
+          >
+          <br />
+          <img src="bles-logo.png" />
+          <!-- Asi se pone cuando la imgen esta en la misma carpeta que el achivo html -->
+          <img
+          src="https://concepto.de/wp-content/uploads/2021/07/caballos-e1626738224231.jpg"
+          />
+          <!-- Asi se pone cuando la imgen esta en la web -->
+    </body>
+
+  </html>
